@@ -18,7 +18,7 @@ const Home = () => {
           </p>
           <div className="container">
             <button className="secondary-button">Book Demo Class</button>
-            <p>
+            <p className="home-pa">
               Explore More <FiArrowRight />{" "}
             </p>
           </div>
