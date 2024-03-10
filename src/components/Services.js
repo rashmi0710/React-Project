@@ -25,7 +25,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="services-container">
+    <div id= "services" className="services-container">
       <h1 className="service-primary-heading">
         We provide various kinds of learning modules for you
       </h1>

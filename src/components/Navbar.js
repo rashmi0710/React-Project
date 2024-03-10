@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import Logo from "../assets/Logo.png";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -15,39 +14,52 @@ import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 
-
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
       text: "Home",
       icon: <HomeIcon />,
+      target: "#home"
     },
     {
       text: "Services Us",
       icon: <DesignServicesIcon />,
+      target: "#services"
     },
     {
       text: "Why Us",
       icon: <QuestionMarkIcon />,
+      target: "#whyus"
     },
     {
       text: "Our Goals",
       icon: <TrackChangesIcon />,
+      target: "#goals"
     },
-
   ];
+
+  const scrollToSection = (target) => {
+    const section = document.querySelector(target);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" style={{width:'75%', height:'75%'}}/>
+        <img src={Logo} alt="Logo" style={{ width: '75%', height: '75%' }} />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">Servies Us</a>
-        <a href="">Wny Us</a>
-        <a href="">Our Goals</a>
-        <button className="primary-button">Contact Us</button>
+        {menuOptions.map((item, index) => (
+          <a key={index} href={item.target} onClick={() => scrollToSection(item.target)}>
+            {item.text}
+          </a>
+        ))}
+        <button className="primary-button" onClick={() => scrollToSection("#contact")}>
+          Contact Us
+        </button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -62,7 +74,7 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton onClick={() => scrollToSection(item.target)}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>

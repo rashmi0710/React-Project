@@ -5,7 +5,7 @@ import SupervisedUserCircleRoundedIcon from "@mui/icons-material/SupervisedUserC
 
 const WhyUstwo = () => {
   return (
-    <div className="WhyUsTwo-container">
+    <div id= "goals"className="WhyUsTwo-container">
       <h1 style={{ fontSize: "3rem", margin: "0rem 3rem 0rem 3rem" }}>
         We Completed 1200+ Certification Program Successfully & Counting
       </h1>

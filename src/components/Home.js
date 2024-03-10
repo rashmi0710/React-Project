@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import BannerImage from "../assets/home-banner-image.png";
+// import BannerImage from "../assets/home-banner-image.png";
 import { FiArrowRight } from "react-icons/fi";
-
+import VideoPlayer from "./video";
 const Home = () => {
   return (
     <div className="home-container">
@@ -24,7 +24,8 @@ const Home = () => {
           </div>
         </div>
         <div className="home-image-section">
-          <img src={BannerImage} alt="" />
+          {/* <img src={BannerImage} alt="" /> */}
+          <VideoPlayer/>
         </div>
       </div>
     </div>

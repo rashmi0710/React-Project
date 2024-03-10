@@ -1,9 +1,9 @@
 import React from "react";
-import BannerImage from "../assets/home-banner-image.png";
-
+// import BannerImage from "../assets/home-banner-image.png";
+import VideoPlayer from "./video"
 const WhyUs = () => {
   return (
-    <div className="WhyUs-container">
+    <div id="whyus" className="WhyUs-container">
       <h1 className="service-primary-heading " style={{textAlign:"center"}}>Why Us</h1>
       <p className="service-primary-text" style={{textAlign:"center", marginBottom:"0%"}}>
         At Learning Exp. We Are Committed To Providing You With A Superior
@@ -12,7 +12,7 @@ const WhyUs = () => {
       </p>
       <div className="home-banner-container" >
         <div className="home-image-section">
-          <img src={BannerImage} alt="" />
+          <VideoPlayer/>
         </div>
         <div className="home-text-section" style={{margin:"0% 5% 0% 5%"}}>
           <h1
