@@ -1,42 +1,46 @@
 import React from "react";
 import Logo from "../assets/Logo.svg";
-import { BsTwitter } from "react-icons/bs";
-import { SiLinkedin } from "react-icons/si";
-import { BsYoutube } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+
 
 const Footer = () => {
   return (
     <div className="footer-wrapper">
       <div className="footer-section-one">
         <div className="footer-logo-container">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="" /> <h1>Learning Exp.</h1>
         </div>
         <div className="footer-icons">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
+          <TwitterIcon/>
+          <LinkedInIcon/>
+          <YouTubeIcon/>
+          <FacebookRoundedIcon/>
         </div>
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Qualtiy</span>
-          <span>Help</span>
-          <span>Share</span>
-          <span>Carrers</span>
-          <span>Testimonials</span>
-          <span>Work</span>
+          <span style={{color:"black", marginBottom:"2rem"}}>Links</span>
+          <span>Home</span>
+          <span>Pricing</span>
+          <span>Download</span>
+          <span>About</span>
+          <span>Service</span>
         </div>
         <div className="footer-section-columns">
-          <span>244-5333-7783</span>
-          <span>hello@food.com</span>
-          <span>press@food.com</span>
-          <span>contact@food.com</span>
+          <span style={{color:"black", marginBottom:"2rem"}}>Support</span>
+          <span>FAQ</span>
+          <span>Features</span>
+          <span>Contact</span>
+          <span>Reporting</span>
         </div>
         <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <span style={{color:"black", marginBottom:"2rem"}}>Contact Us</span>
+          <span>+880 12345678</span>
+          <span>youremail@gmail.com</span>
+          <span>Pune City</span>
         </div>
       </div>
     </div>
