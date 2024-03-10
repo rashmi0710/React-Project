@@ -6,6 +6,7 @@ const Feedback = () => {
   return (
     <div className="Feedback-container">
       <div className="Student-info-section">
+        
         <div className="student-image-section">
           <img src={StudenTimage} alt="" />
         </div>

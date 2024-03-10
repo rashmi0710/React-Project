@@ -195,6 +195,31 @@
     color: Black;
     max-width: 70%;
   }
+  .Feed-container{
+    display: flex;
+    margin: 5% 5% 0% 5%;
+  }
+  .feed-text{
+    display: grid;
+    max-width: 845px;
+    width: 100%;
+  }
+  .feed-button{
+    margin-left: 20%;
+  }
+  .feed-secondary-button {
+    background-color: #f0f0f0; 
+    color: #333; 
+    border: 5% solid #ccc; 
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .feed-secondary-button:hover {
+    background-color: #e0e0e0; /* Darker grey background color on hover */
+    border-color: #999; /* Darker border color on hover */
+  }
   .contact-form-container {
     background-color: white;
     max-width: 700px;

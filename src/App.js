@@ -7,6 +7,7 @@ import Feedback from './components/Feedback';
 import Contact from './components/ContactUs';
 import BackgroundImage from './components/backgroundimage';
 import Footer from "./components/Footer";
+import Feed from './components/Feed';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Services/>
       <WhyUs/>
       <WhyUstwo/>
+      <Feed/>
       <Feedback/>
       <Contact/>
       <Footer />
