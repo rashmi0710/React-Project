@@ -266,7 +266,11 @@
       align-items: center;
       justify-content: center;
     }
-    
+    .Student-info-section{
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
     .home-image-section{
       width: 100%;
       max-width: 400px;
@@ -280,6 +284,11 @@
       max-width: 80%;
     }
     .home-text-section{
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+    .student-text-section{
       justify-content: center;
       align-items: center;
       margin-top: 4rem;
@@ -342,5 +351,45 @@
     margin-top: 2%;
   }
   .grid-item div p{
+    font-size: 1rem;
+  }
+  .Student-info-section{
+    position: relative;
+    display: flex;
+    padding-top: 3rem;
+    margin: 0% 5% 0% 5%;
+    height: 515px;
+  }
+  .student-text-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 10%;
+    background-color: #EFEFFE;
+  }
+  .student-image-section{
+    max-width: 30%;
+    flex: 1;
+  }
+  .star-container svg{
+    font-size: 4rem; 
+    color: green;
+    padding: 3%;
+  }
+  .student-text-section div p{
+    padding: 3%;
+    font-size: 1rem;
+    max-width: 70%;
+    color: #707070;
+  }
+  .student-text-section h5{
+    padding: 3%;
+    font-size: 1rem;
+  }
+  .student-text-section h6{
+    padding: 0% 3%;
     font-size: 1rem;
   }
