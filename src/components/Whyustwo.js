@@ -5,8 +5,8 @@ import SupervisedUserCircleRoundedIcon from "@mui/icons-material/SupervisedUserC
 
 const WhyUstwo = () => {
   return (
-    <div className="WhyUs-container">
-      <h1 className="service-primary-heading">
+    <div className="WhyUsTwo-container">
+      <h1 style={{ fontSize: "3rem", margin: "0rem 3rem 0rem 3rem" }}>
         We Completed 1200+ Certification Program Successfully & Counting
       </h1>
       <p className="service-primary-text">
@@ -14,42 +14,33 @@ const WhyUstwo = () => {
         Learning Experience That Empowers You To Achieve Your Goals. Join Us
         Today And Embark On A Journey Of Discovery, Growth, And Success.
       </p>
-
-      <div className="SymbolContainer">
-        <div>
-          <CheckCircleRoundedIcon
-            style={{ fontSize: "larger", margin: "0% 10% 0% 10%", }}
-          />
+      <div class="grid-container">
+        <div class="grid-item">
+          <CheckCircleRoundedIcon />
           <div>
-            <h3>100+</h3>
-            <h3>Batch Complete</h3>
+            <h1>100+</h1>
+            <p>Batch Complete</p>
           </div>
         </div>
-        <div>
-          <AssignmentTurnedInIcon
-            style={{ fontSize: "larger", margin: "0% 10% 0% 10%" }}
-          />
+        <div class="grid-item">
+          <AssignmentTurnedInIcon />
           <div>
-            <h3>50+</h3>
-            <h3>Active Batches</h3>
+            <h1>50+</h1>
+            <p>Active Batches</p>
           </div>
         </div>
-        <div>
-          <SupervisedUserCircleRoundedIcon
-            style={{ fontSize: "larger", margin: "0% 10% 0% 10%" }}
-          />
+        <div class="grid-item">
+          <SupervisedUserCircleRoundedIcon />
           <div>
-            <h3>10,000+</h3>
-            <h3>Student Satisfied</h3>
+            <h1>10,000+</h1>
+            <p>Student Satisfied</p>
           </div>
         </div>
-        <div>
-          <SupervisedUserCircleRoundedIcon
-            style={{ fontSize: "larger", margin: "0% 10% 0% 10%" }}
-          />
+        <div class="grid-item">
+          <SupervisedUserCircleRoundedIcon />
           <div>
-            <h3>10+</h3>
-            <h3>Course Modules</h3>
+            <h1>10+</h1>
+            <p>Course Modules</p>
           </div>
         </div>
       </div>
